@@ -60,20 +60,20 @@ export default function Home() {
               Godawari Lan 2026
             </p>
 
-            <div className="flex gap-2 justify-center items-center mb-10">
+            {/* <div className="flex gap-2 justify-center items-center mb-10">
               <div className="text-center px-3 border-r border-border">
                 <div className="text-xl font-bold text-secondary">NPR 250</div>
                 <div className="text-[10px] uppercase tracking-tighter text-muted-foreground">Entry Fee</div>
               </div>
               <div className="text-center px-3 border-r border-border">
-                <div className="text-xl font-bold text-secondary">4v4</div>
+                <div className="text-xl font-bold text-secondary">Full</div>
                 <div className="text-[10px] uppercase tracking-tighter text-muted-foreground">Squad</div>
               </div>
               <div className="text-center px-3">
                 <div className="text-xl font-bold text-secondary">Prizes</div>
                 <div className="text-[10px] uppercase tracking-tighter text-muted-foreground">Waiting</div>
               </div>
-            </div>
+            </div> */}
 
             <Link href="/register">
               <Button
