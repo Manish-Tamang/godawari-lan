@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-
+import { AlertCircle } from 'lucide-react';
 import { toast } from "sonner"
 
 interface TeamData {
@@ -158,6 +158,18 @@ export function RegistrationForm({ onSuccess }: { onSuccess: () => void }) {
         <div className="mb-6 border-b border-border pb-4">
           <h2 className="text-xl font-medium">Tournament Registration</h2>
           <p className="text-xs text-muted-foreground mt-1">Fill in your team details for Godawari Lan 2026</p>
+        </div>
+
+        {/* Intra-College Disclaimer */}
+        <div className="mb-8 p-4 bg-amber-50 border border-amber-200 rounded-lg flex items-start gap-3">
+          <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+          <div className="space-y-1">
+            <p className="text-xs font-bold text-amber-800 uppercase tracking-tight">Intra-College Event Only</p>
+            <p className="text-[11px] text-amber-700 leading-relaxed">
+              This tournament is exclusively for <span className="font-semibold">Sushma Godawari College students</span>.
+              Participants from other institutions will be disqualified during verification.
+            </p>
+          </div>
         </div>
 
         {message && message.type === 'error' && (
